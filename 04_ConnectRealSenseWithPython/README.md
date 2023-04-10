@@ -1,6 +1,7 @@
 # 深度传感器笔记04 用Python打开传感器并测量距离
 > 此篇笔记是「深度传感器」笔记系列的第4篇，记录了如何通过Python连接并打开RealSense深度传感器的摄像头，同时获得RGB和Depth数据
-> - Video: https://youtu.be/6rwpmGlqzEE
+> - [Video](https://youtu.be/6rwpmGlqzEE)
+> - [Code](https://github.com/yiyangd/RGBD-Sensor-Notes/blob/main/04_ConnectRealSenseWithPython/setup.py)
 ### Step 1. Import Libraries
 ```py
 import pyrealsense 2 as rs
