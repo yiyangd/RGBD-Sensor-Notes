@@ -1,7 +1,5 @@
 import pyrealsense2 as rs
 import numpy as np
-import cv2
-
 
 class RGBDSensor:
     def __init__(self):
@@ -14,6 +12,7 @@ class RGBDSensor:
         config.enable_stream(rs.stream.depth, 640, 480, rs.format.z16, 30)
         # Start the pipeline and get the color and depth sensor objects
         self.pipeline.start(config)
+        
         # Set the exposure and gain values for the color sensor
         self.color_sensor = self.pipeline.get_active_profile().get_device().query_sensors()[1]
         self.color_sensor.set_option(rs.option.exposure, 1000)
@@ -40,15 +39,3 @@ class RGBDSensor:
 
     def release(self):
         self.pipeline.stop()
-
-
-
-
-
-
-
-
-
-
-
-
