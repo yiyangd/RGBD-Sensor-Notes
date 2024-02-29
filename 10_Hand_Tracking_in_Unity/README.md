@@ -1,5 +1,6 @@
 ## RGBD Sensor Note 10 - 3D Hand Tracking and Visualization in Unity
 > This summary describes a three-part Unity3D project setup for UDP data communication and hand tracking visualization. Firstly, a `UDPReceive` script is detailed for setting up a Unity project to receive UDP data, using essential namespaces for networking and multi-threading, and outlining member variables and methods for initializing and managing UDP communication. Secondly, Python code for hand data collection from an RGBD sensor is presented, demonstrating network communication setup, video capture, and hand landmarks data sending over UDP. Lastly, a `HandTracking` script in Unity is introduced for visualizing hand movements in 3D space, utilizing GameObjects to represent hand points and bones, and updating their positions based on incoming UDP data. The setup involves creating and configuring GameObjects in Unity to visualize hand tracking data received over UDP, highlighting the integration of external sensor data into a Unity project for interactive applications.
+> 
 ![https://youtu.be/66u2hyGuyK0](https://files.mdnice.com/user/1474/410c5f21-9dc0-4a6f-8617-8810e261fc7a.gif)
 
 
